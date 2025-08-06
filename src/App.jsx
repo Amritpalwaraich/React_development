@@ -1,34 +1,20 @@
-const Card = ({title}) => {
- return (
-  <div> 
-    <h2>{title}</h2>
-  </div>
- )
-
-}
-
-
-const Rea = ({run}) => {
-  return (
-    <div>
-      <h4>{run}</h4>
-      
-    </div>
-  )
-}
-
-
-
+import { useEffect, useState } from "react"
+import Search from "./components/Search"
 
 function App() {
   return (
     <div>
-      <h1> App Component</h1>
+      <div className="pattern"/>
+      <div className="wrapper">
+        <header>
+          <img src='./hero.png' alt="Hero Banner"/>
+          <h1>Find <span className="text-gradient">Movies</span>  You'll Enjoy Without the Hassle</h1>
+          <Search />
+        </header>
+      </div>
 
-      <Card title="THe Lion King"/>
-      <Card title="Avatar"/>
-      <Card title="Monkey"/>
-      <Rea run="Why not yet   "/>
+
+
     </div>
   )
   
